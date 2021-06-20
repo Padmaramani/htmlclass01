@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<title>national parks</title>
+</head>
+<body>
+	<p> Click on a choice below to visit all the information </p>
+		<u1>
+			<li><a href=index.html>index</a></li>
+			<li><a href=research.html>research</a></li>
+			<li><a href=quiz.html>quiz</a></li>
+			<li><a href=about.html>about</a></li>
+			<li><a href=contact_us.html>contact us</a></li>
+		</ul>
+	
+<fieldset> <!-- fieldset groups related form types -->
+
+	<legend>Preference Details</legend>
+<!-- Radio button -->	
+	<form>
+		<p> Please select your favorite national park 
+			<br />
+			<input type="radio" name="park name" value="Yosemite" />Yosemite
+			<input type="radio" name="park name" value="Sequoia" />Sequoia
+			<input type="radio" name="park name" value="Yellow stone" />Yellow stone
+			<input type="radio" name="park name" value="shenendoa" />shenendoa
+		</p>
+	</form>
+
+<!-- Check box -->
+	<form>
+		<p> Please select all the national park you will visit this year: 
+			<br />
+			<input type="checkbox" name="park visit" value="Yosemite" />Yosemite
+			<input type="checkbox" name="park visit" value="Sequoia" />Sequoia
+			<input type="checkbox" name="park visit" value="Yellow stone" />Yellow stone
+			<input type="checkbox" name="park visit" value="shenendoa" />shenendoa
+		</p>
+	</form>
+
+
+
+<!-- Drop down list -->
+	<form>
+		<p> Please select the items you will purchase for the visit to the park:
+			<br />
+			<select name="purchase">
+				<option value="tent">tent</option>
+				<option value="backpack">backpack</option>
+				<option value="propane gas">propane gas</option>
+				<option value="Hiking stick">hiking stick</option>
+				<option value="water bottle">water bottle</option>
+			</select>
+		</p>
+	</form>
+
+
+<!-- Drop down list with multiple select box -->
+	<form>
+		<p> Please select all modes of transportation that you prefer:
+			<br />
+			<select name="transportation" size="2" multiple="multiple">
+				<option value="car" selected="selected">Car</option>
+				<option value="RV">RV</option>
+				<option value="Motor bike">Motor bike</option>
+				<option value="Bus">Bus</option>
+				<option value="Van" selected="selected">Van</option>
+			</select>
+		</p>
+	</form>
+
+<!-- Input date -->
+	<form>
+		<label for="travel">Probable travel date</label>
+		<br />
+		<input type="date" name="travel" id="travel" />
+		<input type="submit" value="submit" /> 
+
+</fieldset>
+
+<fieldset>
+	<legend>your contact</legend>
+
+<!-- Upload your file to an input box -->
+
+	<form>
+		<p>Upload your picture in png format:</p> 
+		<input type="file" name="userphoto" required="required"/> <br />
+		<input type="submit" value="upload" />
+	</form>
+
+
+<!-- enter your email for subscription -->
+
+	<form>
+		<p>Subscribe to our email list</p>
+		<input type="text" name="email" required="required"/>
+		<input type="submit" name="subscribe" value="Subscribe" />
+	</form>
+
+<!-- This is an example of input type email -->
+	<form>
+		<label for=email>Enter your email</label>
+		<br/>
+		<input type="email" name="email" id="email" />
+		<input type="submit" value="submit" />
+	<form>
+
+<!-- This is an example for adding an url -->
+	<form>
+		<br />
+		<label for="website">Enter your website</label>
+		<br /> 
+		<input type="url" name="website" id="website" />
+		<input type="submit" value="submit" />
+	</form>	
+
+<!-- This is an example for search input -->
+	<form>
+		<label for="search">Search</label> 
+		<br /> 
+		<input type="search" name="search" id="search"/>
+        <input type="submit" value="search" />
+    </form> 
+
+</body>
+</html>
